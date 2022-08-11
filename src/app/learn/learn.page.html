@@ -1,0 +1,147 @@
+<app-menu></app-menu>
+
+<ion-content [fullscreen]="true">
+  <app-header [title]="'Learn'"></app-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h2>Games</h2>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img src="https://i.imgur.com/EfStQHm.png" />
+          <ion-card-header>
+            <ion-card-title>Credit Clash</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            A perfect credit score the the ultimate achievement.
+          </ion-card-content>
+        </ion-card>
+        
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img src="https://i.imgur.com/8iPvbKm.png" />
+          <ion-card-header>
+            <ion-card-title>The Payoff</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Manage unexpected event and reap the rewards!
+          </ion-card-content>
+        </ion-card>
+        
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img src="https://i.imgur.com/tdvg4VN.png" />
+          <ion-card-header>
+            <ion-card-title>Money Magic</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Learn the magic of budgeting for short and long-term goals!
+          </ion-card-content>
+        </ion-card>
+        
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img src="https://i.imgur.com/OZdTOP1.png" />
+          <ion-card-header>
+            <ion-card-title>Payback</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Learn about student loans and compete to win prizes!
+          </ion-card-content>
+        </ion-card>
+        
+      </ion-col>
+    </ion-row>
+
+
+
+      <ion-row>
+        <ion-col>
+          <h2>Quizzes</h2>
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <img src="https://cdn-icons-png.flaticon.com/512/619/619034.png" height="100px" class="ion-padding" style="margin: 0 auto;display: block;"/>
+            <ion-card-header>
+              <ion-card-title>Cost of Living</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+          
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <img src="https://cdn-icons-png.flaticon.com/512/4334/4334702.png" height="100px" class="ion-padding" style="margin: 0 auto;display: block;"/>
+            <ion-card-header>
+              <ion-card-title>Debt</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+          
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <img src="https://cdn-icons-png.flaticon.com/512/584/584011.png" height="100px" class="ion-padding" style="margin: 0 auto;display: block;"/>
+            <ion-card-header>
+              <ion-card-title>Budgeting</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+          
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <img src="https://cdn-icons-png.flaticon.com/512/4221/4221633.png" height="100px" class="ion-padding" style="margin: 0 auto;display: block;"/>
+            <ion-card-header>
+              <ion-card-title>Investing</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+          
+        </ion-col>
+      </ion-row>
+
+
+  </ion-grid>
+
+
+  
+
+
+
+
+</ion-content>
+
+
+
+
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button [routerLink]="['/tabs/tab1']">
+    <ion-icon name="star-outline"></ion-icon>
+    <ion-label>Goals</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button [routerLink]="['/tabs/tab2']">
+    <ion-icon name="home-outline"></ion-icon>
+    <ion-label>Home</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button [routerLink]="['/tabs/tab3']">
+    <ion-icon name="checkbox-outline"></ion-icon>
+    <ion-label>Tasks</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

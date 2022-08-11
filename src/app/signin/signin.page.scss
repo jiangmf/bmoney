@@ -1,0 +1,23 @@
+.button-bar ion-button {
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+}
+
+.button-bar ion-button:first-child {
+    --border-radius: 4px 0 0 4px;
+}
+
+.button-bar ion-button:last-child {
+    --border-radius: 0 4px 4px 0;
+}
+
+#guest {
+    --background-color: transparent;
+    --background-hover: rgba(255,255,255,0.3);
+    --background-activated: rgba(255,255,255,0.3);
+    --background-focused: rgba(255,255,255,0.3);
+    --box-shadow: none;
+
+}
+

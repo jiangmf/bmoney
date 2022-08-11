@@ -1,0 +1,18 @@
+.ion-justify-content-center{
+    display: flex;
+    z-index: 10000;
+}
+
+ion-item-sliding {
+   border: 1px solid transparent;
+}
+
+.drop-over-active {
+    border: 1px dashed green;
+    border-collapse: collapse;
+
+}
+
+ion-progress-bar{
+    margin-top: 8px;
+    }

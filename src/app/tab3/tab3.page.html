@@ -1,0 +1,30 @@
+<app-menu></app-menu>
+
+<ion-content [fullscreen]="true">
+  <app-header [title]="'Tasks'"></app-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Assigned Tasks</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            
+            <ion-list>
+              <ion-item *ngFor="let task of assignedTasks">
+                <ion-label>{{task.name}}
+                  <p style="font-size:12px" *ngIf="task.due" >Due {{task.due}}</p>
+                </ion-label>
+                <ion-badge color="success" class="ion-float-right">${{task.bounty}}</ion-badge>
+                <ion-checkbox color="" slot="start"></ion-checkbox>
+              </ion-item>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+</ion-grid>
+</ion-content>
