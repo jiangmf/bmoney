@@ -17,7 +17,7 @@ export class Tab3Page {
     {
       name: 'Clean your room',
       due: '2022-08-12',
-      bounty: 10
+      bounty: 2
     },
     {
       name: 'Walk the dog',

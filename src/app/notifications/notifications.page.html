@@ -1,9 +1,52 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>notifications</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-menu></app-menu>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <app-header [title]="'Notifications'"></app-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Notifications</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+                <ion-item *ngFor="let notification of notifications">
+                  <ion-label>
+                    <p style="text-overflow: initial; white-space: initial;"
+                    [ngClass]="{'bold': notification.unread}"
+                    >{{notification.message}}</p>
+                  </ion-label>
+                </ion-item>
+            </ion-list>
+            <ion-label>Show More...</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
 
 </ion-content>
+
+
+
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button [routerLink]="['/tabs/tab1']">
+      <ion-icon name="star-outline"></ion-icon>
+      <ion-label>Goals</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/tabs/tab2']">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/tabs/tab3']">
+      <ion-icon name="checkbox-outline"></ion-icon>
+      <ion-label>Tasks</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
